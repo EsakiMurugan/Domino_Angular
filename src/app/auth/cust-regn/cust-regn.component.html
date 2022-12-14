@@ -1,0 +1,39 @@
+<div class="row row d-flex aligns-items-center justify-content-center" style="margin : 20px 25px">
+    <div class="col-md-4 card p-3 px-5 py-5 mt-3 bg-transparent">
+    <form>
+        <h4 style="text-align: center;">CREATE AN ACCOUNT</h4>
+        <br/>
+        <div class="col-12">
+            <label  class="form-label">Name</label>
+            <input class="form-control" type="text" name="customerName"  [(ngModel)]="customer.customerName">
+        </div>
+        <div class="col-12">
+            <label  class="form-label">Mobile Number</label>
+            <input class="form-control" type="text" name="mobileNumber" [(ngModel)]="customer.mobileNumber">
+        </div>
+        <div class="col-12">
+            <label  class="form-label">E-mail ID</label>
+            <input class="form-control" type="text" name="emailID" [(ngModel)]="customer.emailID">
+        </div>
+        <div class="col-12">
+            <label class="form-label">Address</label>
+            <input class="form-control" type="text" name="address" [(ngModel)]="customer.address">
+        </div>
+        <div class="col-12">
+            <label  class="form-label">Password</label>
+            <input  class="form-control" type="text" name="password" [(ngModel)]="customer.password">
+        </div>
+        <div class="col-12">
+            <label  class="form-label">Confirm Password</label>
+            <input class="form-control" type="text" name="cPassword" [(ngModel)]="customer.cPassword">
+        </div>
+        <br/>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit" (click) = "register()">
+                Register
+            </button>
+        </div>
+    </form>
+</div>
+</div>
+

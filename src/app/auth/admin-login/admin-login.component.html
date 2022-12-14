@@ -1,0 +1,23 @@
+<div class="row row d-flex aligns-items-center justify-content-center">
+    <div class="col-md-4 card p-3 px-5 py-5 mt-3">
+        <br/>
+        <br/>
+        <h4>Admin Login</h4>
+        <br/>
+        <br/>
+        <form #form ="ngForm">
+            <div class="mb-3">
+                <label class="form-label">E-mail ID</label>
+                <input type="text" class="form-control" name="emailID" [(ngModel)]="admin.emailID">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" name="password" [(ngModel)]="admin.password">
+            </div>
+            <br/>
+            <div class="mb-3">
+                <button class="btn btn-success" (click)="onLogin()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

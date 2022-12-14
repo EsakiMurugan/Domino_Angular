@@ -1,0 +1,32 @@
+<div class="container" *ngIf = "pizza">
+    <br/>
+    <br/>
+    <h3>Menu</h3>
+    <br/>
+    <a [routerLink]="['add']">Stock Update</a>
+    <br/>
+    <br/>
+    <table class = "table">
+        <thead>
+            <tr>
+                <th>Pizza ID</th>
+           
+                <th>Pizza Name</th>
+          
+                <th>Price</th>
+          
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor = "let Pizzas of pizza">
+                <td>{{Pizzas.pizzaID}}</td>
+                <td>{{Pizzas.pizzaName}}</td>
+                <td>{{Pizzas.price}}</td>
+                <td>{{Pizzas.stock}}</td>
+                <td><a [routerLink]="['edit',Pizzas.pizzaID]">Edit</a></td>
+                <td><a [routerLink]="['delete',Pizzas.pizzaID]">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

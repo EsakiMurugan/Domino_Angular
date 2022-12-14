@@ -1,0 +1,51 @@
+<!-- <div class="row row d-flex aligns-items-center justify-content-center">
+    <div class="col-md-4 card p-3 px-5 py-5 mt-3">
+        <br/>
+        <br/>
+        <h4>Customer Login</h4>
+        <br/>
+        <br/>
+        <form #form ="ngForm">
+            <div class="mb-3">
+                <label class="form-label">E-mail ID</label>
+                <input type="text" class="form-control" name="emailID" [(ngModel)]="customer.emailID">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" name="password" [(ngModel)]="customer.password">
+            </div>
+            <br/>
+            <div class="mb-3">
+                <button class="btn btn-success" (click)="onLogin()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr> -->
+
+<section class="vh-100" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5">
+  
+              <h3 class="mb-5">Sign in</h3>
+                <form #form="ngForm" (ngSubmit)="onSubmit(password.value)">
+                    <div class="form-outline mb-4">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control form-control-lg" name="emailID" [(ngModel)]="customer.emailID">
+                    </div>
+                     <div class="form-outline mb-4">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control form-control-lg" name="password" [(ngModel)]="customer.password" #password>
+                     </div>
+                     <button class="btn btn-primary btn-lg btn-block">Login</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
